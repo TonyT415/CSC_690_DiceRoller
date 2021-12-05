@@ -10,10 +10,11 @@
 		91E6E79C275D5F6600C96FCA /* Dice_RollerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E6E79B275D5F6600C96FCA /* Dice_RollerApp.swift */; };
 		91E6E79E275D5F6600C96FCA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E6E79D275D5F6600C96FCA /* ContentView.swift */; };
 		91E6E7A0275D5F6700C96FCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91E6E79F275D5F6700C96FCA /* Assets.xcassets */; };
-		91E6E7A3275D5F6700C96FCA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91E6E7A2275D5F6700C96FCA /* Preview Assets.xcassets */; };
 		91E6E7AD275D5F6700C96FCA /* Dice_RollerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E6E7AC275D5F6700C96FCA /* Dice_RollerTests.swift */; };
 		91E6E7B7275D5F6700C96FCA /* Dice_RollerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E6E7B6275D5F6700C96FCA /* Dice_RollerUITests.swift */; };
 		91E6E7B9275D5F6700C96FCA /* Dice_RollerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E6E7B8275D5F6700C96FCA /* Dice_RollerUITestsLaunchTests.swift */; };
+		91E6E7C6275D607E00C96FCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91E6E7C5275D607E00C96FCA /* Main.storyboard */; };
+		91E6E7CA275D61A200C96FCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E6E7C9275D61A200C96FCA /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,12 +39,13 @@
 		91E6E79B275D5F6600C96FCA /* Dice_RollerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice_RollerApp.swift; sourceTree = "<group>"; };
 		91E6E79D275D5F6600C96FCA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		91E6E79F275D5F6700C96FCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		91E6E7A2275D5F6700C96FCA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		91E6E7A8275D5F6700C96FCA /* Dice RollerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dice RollerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91E6E7AC275D5F6700C96FCA /* Dice_RollerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice_RollerTests.swift; sourceTree = "<group>"; };
 		91E6E7B2275D5F6700C96FCA /* Dice RollerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dice RollerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91E6E7B6275D5F6700C96FCA /* Dice_RollerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice_RollerUITests.swift; sourceTree = "<group>"; };
 		91E6E7B8275D5F6700C96FCA /* Dice_RollerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice_RollerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		91E6E7C5275D607E00C96FCA /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		91E6E7C9275D61A200C96FCA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,17 +99,10 @@
 				91E6E79B275D5F6600C96FCA /* Dice_RollerApp.swift */,
 				91E6E79D275D5F6600C96FCA /* ContentView.swift */,
 				91E6E79F275D5F6700C96FCA /* Assets.xcassets */,
-				91E6E7A1275D5F6700C96FCA /* Preview Content */,
+				91E6E7C5275D607E00C96FCA /* Main.storyboard */,
+				91E6E7C9275D61A200C96FCA /* ViewController.swift */,
 			);
 			path = "Dice Roller";
-			sourceTree = "<group>";
-		};
-		91E6E7A1275D5F6700C96FCA /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				91E6E7A2275D5F6700C96FCA /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		91E6E7AB275D5F6700C96FCA /* Dice RollerTests */ = {
@@ -231,7 +226,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91E6E7A3275D5F6700C96FCA /* Preview Assets.xcassets in Resources */,
+				91E6E7C6275D607E00C96FCA /* Main.storyboard in Resources */,
 				91E6E7A0275D5F6700C96FCA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91E6E7CA275D61A200C96FCA /* ViewController.swift in Sources */,
 				91E6E79E275D5F6600C96FCA /* ContentView.swift in Sources */,
 				91E6E79C275D5F6600C96FCA /* Dice_RollerApp.swift in Sources */,
 			);
@@ -425,6 +421,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -455,6 +452,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
