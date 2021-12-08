@@ -16,6 +16,8 @@
 		91E6E82B275D6A0100C96FCA /* Dice_RollerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E6E82A275D6A0100C96FCA /* Dice_RollerTests.swift */; };
 		91E6E835275D6A0100C96FCA /* Dice_RollerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E6E834275D6A0100C96FCA /* Dice_RollerUITests.swift */; };
 		91E6E837275D6A0100C96FCA /* Dice_RollerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E6E836275D6A0100C96FCA /* Dice_RollerUITestsLaunchTests.swift */; };
+		91E6E844275EDB3A00C96FCA /* DiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E6E843275EDB3A00C96FCA /* DiceViewController.swift */; };
+		91E6E846275EEAD900C96FCA /* DiceSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E6E845275EEAD900C96FCA /* DiceSetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		91E6E830275D6A0100C96FCA /* Dice RollerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dice RollerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91E6E834275D6A0100C96FCA /* Dice_RollerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice_RollerUITests.swift; sourceTree = "<group>"; };
 		91E6E836275D6A0100C96FCA /* Dice_RollerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice_RollerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		91E6E843275EDB3A00C96FCA /* DiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceViewController.swift; sourceTree = "<group>"; };
+		91E6E845275EEAD900C96FCA /* DiceSetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceSetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +107,11 @@
 				91E6E815275D6A0000C96FCA /* SceneDelegate.swift */,
 				91E6E817275D6A0000C96FCA /* ViewController.swift */,
 				91E6E819275D6A0000C96FCA /* Main.storyboard */,
+				91E6E843275EDB3A00C96FCA /* DiceViewController.swift */,
 				91E6E81C275D6A0100C96FCA /* Assets.xcassets */,
 				91E6E81E275D6A0100C96FCA /* LaunchScreen.storyboard */,
 				91E6E821275D6A0100C96FCA /* Info.plist */,
+				91E6E845275EEAD900C96FCA /* DiceSetViewController.swift */,
 			);
 			path = "Dice Roller";
 			sourceTree = "<group>";
@@ -261,6 +267,8 @@
 				91E6E818275D6A0000C96FCA /* ViewController.swift in Sources */,
 				91E6E814275D6A0000C96FCA /* AppDelegate.swift in Sources */,
 				91E6E816275D6A0000C96FCA /* SceneDelegate.swift in Sources */,
+				91E6E844275EDB3A00C96FCA /* DiceViewController.swift in Sources */,
+				91E6E846275EEAD900C96FCA /* DiceSetViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
