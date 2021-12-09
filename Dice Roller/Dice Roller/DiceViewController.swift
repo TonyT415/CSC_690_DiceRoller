@@ -32,6 +32,7 @@ class DiceViewController: UIViewController, DiceProtocol{
         var diceRolled:Array<Int> = Array()
         
         var diceTotalval = 0
+        var maxCount = 0
         //testing prints
         print("Number of dice: \(diceNum)")
         print("D\(diceMax)")
@@ -43,6 +44,9 @@ class DiceViewController: UIViewController, DiceProtocol{
             if newval > filter{
                 dicePassed.append(newval)
                 diceTotalval = diceTotalval + newval
+                if newval == diceMax{
+                    maxCount = maxCount + 1
+                }
             }
         }
         print(diceRolled)
@@ -59,8 +63,8 @@ class DiceViewController: UIViewController, DiceProtocol{
         let success = dicePassed.count
         let total = diceTotalval
         let average = Double(total)/Double(success)
-        print(Double(diceCount))
-        print(Double(success))
+        //print(Double(diceCount))
+        //print(Double(success))
         let percent1 = Double(success)/Double(diceCount)
         let percent2 = percent1 * 100
         
@@ -71,13 +75,14 @@ class DiceViewController: UIViewController, DiceProtocol{
         PercentDisplay.text = "Success percent: \(percent2)"
         
         AverageDisplay.text = "Average value: \(average)"
-        
+        maxDisplay.text = "Number of max values: \(maxCount)"
         
         NumDiceDisplay.isHidden = false
         SuccessDisplay.isHidden = false
         TotalDisplay.isHidden = false
         AverageDisplay.isHidden = false
         PercentDisplay.isHidden = false
+        maxDisplay.isHidden = false
     }
     // here we want to process and return the data from the dice
     
@@ -97,4 +102,5 @@ class DiceViewController: UIViewController, DiceProtocol{
     
     @IBOutlet weak var AverageDisplay: UILabel!
     
+    @IBOutlet weak var maxDisplay: UILabel!
 }

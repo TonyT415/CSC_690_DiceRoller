@@ -241,6 +241,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of max values:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8e-4J-TGz">
+                                <rect key="frame" x="16" y="358" width="174.66666666666666" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Average value: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKs-Tl-XOm">
                                 <rect key="frame" x="16" y="329" width="146" height="21"/>
                                 <constraints>
@@ -258,6 +264,7 @@
                             <constraint firstItem="hsh-oB-2L8" firstAttribute="top" secondItem="59y-XR-dOC" secondAttribute="top" constant="51" id="49e-yg-M1e"/>
                             <constraint firstItem="S0h-5E-ocY" firstAttribute="top" secondItem="bhB-Xd-DeE" secondAttribute="top" constant="242" id="4ql-tW-hwm"/>
                             <constraint firstItem="hsh-oB-2L8" firstAttribute="bottom" secondItem="aju-GV-gmO" secondAttribute="bottom" id="71L-rc-YhV"/>
+                            <constraint firstItem="59y-XR-dOC" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="R8e-4J-TGz" secondAttribute="trailing" symbolic="YES" id="ILv-DI-uxa"/>
                             <constraint firstItem="S0h-5E-ocY" firstAttribute="leading" secondItem="uqa-tM-uzh" secondAttribute="leading" id="MTI-45-fh8"/>
                             <constraint firstItem="S0h-5E-ocY" firstAttribute="trailing" secondItem="0AR-w9-dC1" secondAttribute="trailing" id="PMY-h1-5Fe"/>
                             <constraint firstItem="6cv-oS-v0z" firstAttribute="leading" secondItem="0AR-w9-dC1" secondAttribute="leading" id="SXu-ke-PgZ"/>
@@ -265,6 +272,7 @@
                             <constraint firstItem="S0h-5E-ocY" firstAttribute="leading" secondItem="PKs-Tl-XOm" secondAttribute="leading" id="UI3-h7-TYr"/>
                             <constraint firstItem="IUr-6O-d9z" firstAttribute="trailing" secondItem="bhB-Xd-DeE" secondAttribute="trailingMargin" id="Uy4-S4-J6N"/>
                             <constraint firstItem="IUr-6O-d9z" firstAttribute="leading" secondItem="59y-XR-dOC" secondAttribute="leading" constant="289" id="XAu-Sg-MZe"/>
+                            <constraint firstItem="R8e-4J-TGz" firstAttribute="leading" secondItem="PKs-Tl-XOm" secondAttribute="leading" id="Xrv-dj-8aV"/>
                             <constraint firstItem="IUr-6O-d9z" firstAttribute="top" secondItem="59y-XR-dOC" secondAttribute="top" id="bzD-ru-Nhr"/>
                             <constraint firstItem="6cv-oS-v0z" firstAttribute="top" secondItem="0AR-w9-dC1" secondAttribute="bottom" constant="8" symbolic="YES" id="eaz-gC-NkR"/>
                             <constraint firstItem="0AR-w9-dC1" firstAttribute="top" secondItem="S0h-5E-ocY" secondAttribute="bottom" constant="8" symbolic="YES" id="ewj-Kl-wS3"/>
@@ -276,6 +284,7 @@
                             <constraint firstItem="PKs-Tl-XOm" firstAttribute="top" secondItem="0AR-w9-dC1" secondAttribute="bottom" constant="37" id="qMW-hh-OzI"/>
                             <constraint firstItem="S0h-5E-ocY" firstAttribute="leading" secondItem="hsh-oB-2L8" secondAttribute="leading" id="uW2-n1-mzT"/>
                             <constraint firstItem="6cv-oS-v0z" firstAttribute="trailing" secondItem="0AR-w9-dC1" secondAttribute="trailing" id="w2B-lt-n4q"/>
+                            <constraint firstItem="R8e-4J-TGz" firstAttribute="top" secondItem="PKs-Tl-XOm" secondAttribute="bottom" constant="8" symbolic="YES" id="zjr-oU-3EN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="EC0-Y5-Hb1"/>
@@ -285,6 +294,7 @@
                         <outlet property="PercentDisplay" destination="6cv-oS-v0z" id="GR4-zL-h9N"/>
                         <outlet property="SuccessDisplay" destination="0AR-w9-dC1" id="rDL-xy-cuT"/>
                         <outlet property="TotalDisplay" destination="S0h-5E-ocY" id="fHm-U8-Xxo"/>
+                        <outlet property="maxDisplay" destination="R8e-4J-TGz" id="Ohs-Oz-PCE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DeO-or-xJQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
