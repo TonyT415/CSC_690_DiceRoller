@@ -214,19 +214,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Dice: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqa-tM-uzh">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Dice: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqa-tM-uzh">
                                 <rect key="frame" x="16" y="214" width="146" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Successes: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0AR-w9-dC1">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Successes: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0AR-w9-dC1">
                                 <rect key="frame" x="16" y="271" width="146" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total dice: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0h-5E-ocY">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total value: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0h-5E-ocY">
                                 <rect key="frame" x="16" y="242" width="146" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="146" id="4jB-Qt-Mbe"/>
@@ -235,8 +235,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Average value: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKs-Tl-XOm">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Success percent:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cv-oS-v0z">
                                 <rect key="frame" x="16" y="300" width="146" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Average value: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKs-Tl-XOm">
+                                <rect key="frame" x="16" y="329" width="146" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="146" id="6PB-zC-CWg"/>
                                 </constraints>
@@ -254,25 +260,29 @@
                             <constraint firstItem="hsh-oB-2L8" firstAttribute="bottom" secondItem="aju-GV-gmO" secondAttribute="bottom" id="71L-rc-YhV"/>
                             <constraint firstItem="S0h-5E-ocY" firstAttribute="leading" secondItem="uqa-tM-uzh" secondAttribute="leading" id="MTI-45-fh8"/>
                             <constraint firstItem="S0h-5E-ocY" firstAttribute="trailing" secondItem="0AR-w9-dC1" secondAttribute="trailing" id="PMY-h1-5Fe"/>
+                            <constraint firstItem="6cv-oS-v0z" firstAttribute="leading" secondItem="0AR-w9-dC1" secondAttribute="leading" id="SXu-ke-PgZ"/>
                             <constraint firstItem="S0h-5E-ocY" firstAttribute="top" secondItem="uqa-tM-uzh" secondAttribute="bottom" constant="8" symbolic="YES" id="T76-2Q-6LZ"/>
                             <constraint firstItem="S0h-5E-ocY" firstAttribute="leading" secondItem="PKs-Tl-XOm" secondAttribute="leading" id="UI3-h7-TYr"/>
                             <constraint firstItem="IUr-6O-d9z" firstAttribute="trailing" secondItem="bhB-Xd-DeE" secondAttribute="trailingMargin" id="Uy4-S4-J6N"/>
                             <constraint firstItem="IUr-6O-d9z" firstAttribute="leading" secondItem="59y-XR-dOC" secondAttribute="leading" constant="289" id="XAu-Sg-MZe"/>
                             <constraint firstItem="IUr-6O-d9z" firstAttribute="top" secondItem="59y-XR-dOC" secondAttribute="top" id="bzD-ru-Nhr"/>
+                            <constraint firstItem="6cv-oS-v0z" firstAttribute="top" secondItem="0AR-w9-dC1" secondAttribute="bottom" constant="8" symbolic="YES" id="eaz-gC-NkR"/>
                             <constraint firstItem="0AR-w9-dC1" firstAttribute="top" secondItem="S0h-5E-ocY" secondAttribute="bottom" constant="8" symbolic="YES" id="ewj-Kl-wS3"/>
                             <constraint firstItem="S0h-5E-ocY" firstAttribute="leading" secondItem="0AR-w9-dC1" secondAttribute="leading" id="fAx-e7-O59"/>
                             <constraint firstItem="S0h-5E-ocY" firstAttribute="leading" secondItem="bhB-Xd-DeE" secondAttribute="leadingMargin" id="hCC-v0-rzW"/>
                             <constraint firstItem="59y-XR-dOC" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="PKs-Tl-XOm" secondAttribute="trailing" symbolic="YES" id="l5c-7i-fsb"/>
                             <constraint firstItem="S0h-5E-ocY" firstAttribute="trailing" secondItem="uqa-tM-uzh" secondAttribute="trailing" id="lDV-Ww-mS3"/>
                             <constraint firstItem="59y-XR-dOC" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aju-GV-gmO" secondAttribute="trailing" symbolic="YES" id="oLE-z0-H3v"/>
-                            <constraint firstItem="PKs-Tl-XOm" firstAttribute="top" secondItem="0AR-w9-dC1" secondAttribute="bottom" constant="8" symbolic="YES" id="qMW-hh-OzI"/>
+                            <constraint firstItem="PKs-Tl-XOm" firstAttribute="top" secondItem="0AR-w9-dC1" secondAttribute="bottom" constant="37" id="qMW-hh-OzI"/>
                             <constraint firstItem="S0h-5E-ocY" firstAttribute="leading" secondItem="hsh-oB-2L8" secondAttribute="leading" id="uW2-n1-mzT"/>
+                            <constraint firstItem="6cv-oS-v0z" firstAttribute="trailing" secondItem="0AR-w9-dC1" secondAttribute="trailing" id="w2B-lt-n4q"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="EC0-Y5-Hb1"/>
                     <connections>
                         <outlet property="AverageDisplay" destination="PKs-Tl-XOm" id="SaZ-NG-Yih"/>
                         <outlet property="NumDiceDisplay" destination="uqa-tM-uzh" id="S89-zM-4Wz"/>
+                        <outlet property="PercentDisplay" destination="6cv-oS-v0z" id="GR4-zL-h9N"/>
                         <outlet property="SuccessDisplay" destination="0AR-w9-dC1" id="rDL-xy-cuT"/>
                         <outlet property="TotalDisplay" destination="S0h-5E-ocY" id="fHm-U8-Xxo"/>
                     </connections>
