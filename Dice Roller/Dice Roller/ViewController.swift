@@ -24,5 +24,15 @@ class StartViewController: UIViewController {
         d4value.text = "\(rand(max: 4))"
     }
     @IBOutlet weak var d4value: UILabel!
+    
+    
+    
+    @IBAction func d6(_ sender: Any) {
+        d6value.isHidden = false
+        d6value.text = "\(rand(max:6))"
+    }
+    @IBOutlet weak var d6value: UILabel!
+    
+    
 }
 
