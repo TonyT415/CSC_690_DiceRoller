@@ -33,6 +33,14 @@ class StartViewController: UIViewController {
     }
     @IBOutlet weak var d6value: UILabel!
     
+    @IBAction func d8(_ sender: Any) {
+        d8value.isHidden = false
+        d8value.text = "\(rand(max: 8))"
+    }
+    @IBOutlet weak var d8value: UILabel!
+    
+    
+    
     
 }
 
