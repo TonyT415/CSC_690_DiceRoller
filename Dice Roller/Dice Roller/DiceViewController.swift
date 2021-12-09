@@ -27,15 +27,22 @@ class DiceViewController: UIViewController, DiceProtocol{
     var diceMax: Int = 6
     var filter:Int = 3
     
-    
     @IBAction func Roll(_ sender: Any) {
         var dicePassed:Array<Int> = Array()
         var diceRolled:Array<Int> = Array()
+        
+        var diceTotalval = 0
+        //testing prints
+        print("Number of dice: \(diceNum)")
+        print("D\(diceMax)")
+        print("filter by:\(filter)")
+        
         for _ in 1...diceNum{
             let newval = Int.random(in: 1...diceMax)
             diceRolled.append(newval)
             if newval > filter{
                 dicePassed.append(newval)
+                diceTotalval = diceTotalval + newval
             }
         }
         print(diceRolled)
@@ -43,11 +50,29 @@ class DiceViewController: UIViewController, DiceProtocol{
             print("No Dice!")
         }
         else{
-            print(dicePassed)
+            //print(dicePassed)
+            
         }
-        let string = "\(dicePassed)"
-        Output.text = string
+        
+        //data for display purposes
+        let diceCount = diceNum
+        let success = dicePassed.count
+        let total = diceTotalval
+        let average = Double(total)/Double(success)
+        
+        //let percent = Double(success)/Double(total)
+        NumDiceDisplay.text = "Number of Dice: \(diceCount)"
+        SuccessDisplay.text = "Successes: \(success)"
+        TotalDisplay.text = "Total value: \(total)"
+        AverageDisplay.text = "Average value: \(average)"
+        
+        NumDiceDisplay.isHidden = false
+        SuccessDisplay.isHidden = false
+        TotalDisplay.isHidden = false
+        AverageDisplay.isHidden = false
+        
     }
+    // here we want to process and return the data from the dice
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? DiceSetViewController {
@@ -55,5 +80,12 @@ class DiceViewController: UIViewController, DiceProtocol{
         }
     }
     
-    @IBOutlet weak var Output: UILabel!
+    @IBOutlet weak var NumDiceDisplay: UILabel!
+    
+    
+    @IBOutlet weak var SuccessDisplay: UILabel!
+    @IBOutlet weak var TotalDisplay: UILabel!
+    
+    @IBOutlet weak var AverageDisplay: UILabel!
+    
 }

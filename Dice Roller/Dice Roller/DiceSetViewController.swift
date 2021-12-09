@@ -65,8 +65,8 @@ class DiceSetViewController: UIViewController{
             return
         }
         
-        delegate?.diceNum(max)
-        delegate?.diceMax(num)
+        delegate?.diceNum(num)
+        delegate?.diceMax(max)
         delegate?.filter(fil)
 
         self.dismiss(animated: true, completion: nil)

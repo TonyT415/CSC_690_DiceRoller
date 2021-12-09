@@ -27,7 +27,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Get Started"/>
                                 <connections>
-                                    <segue destination="cja-qn-EZ6" kind="show" id="j03-XD-jgN"/>
+                                    <segue destination="7rn-yi-G1R" kind="show" id="21d-UM-zA1"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -48,79 +48,103 @@
             </objects>
             <point key="canvasLocation" x="949.23076923076917" y="68.957345971563981"/>
         </scene>
-        <!--Dice Screen-->
-        <scene sceneID="Pyg-dC-4ul">
+        <!--Dice View Controller-->
+        <scene sceneID="qLy-ZV-CQe">
             <objects>
-                <viewController title="Dice Screen" id="cja-qn-EZ6" customClass="DiceViewController" customModule="Dice_Roller" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="zEV-15-0gH">
+                <viewController id="7rn-yi-G1R" customClass="DiceViewController" customModule="Dice_Roller" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bhB-Xd-DeE">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIc-sE-LUe">
-                                <rect key="frame" x="289" y="90" width="85" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUr-6O-d9z">
+                                <rect key="frame" x="289" y="88" width="85" height="31"/>
                                 <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Set Dice" subtitle=""/>
                                 <connections>
-                                    <segue destination="PJM-6e-gyi" kind="presentation" id="T02-GU-NIc"/>
+                                    <segue destination="PJM-6e-gyi" kind="presentation" id="Msz-15-tmN"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dice Results" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EoZ-AB-9c5">
-                                <rect key="frame" x="31" y="135" width="94" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P89-fi-dgn">
-                                <rect key="frame" x="172" y="125" width="48" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aju-GV-gmO">
+                                <rect key="frame" x="171" y="129" width="48" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Roll" titleAlignment="center"/>
                                 <connections>
-                                    <action selector="Roll:" destination="cja-qn-EZ6" eventType="touchUpInside" id="dhu-kP-PYF"/>
+                                    <action selector="Roll:" destination="7rn-yi-G1R" eventType="touchUpInside" id="nFF-j3-m6S"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Dice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DoN-dm-HyT">
-                                <rect key="frame" x="31" y="226" width="164" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dice Results" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsh-oB-2L8">
+                                <rect key="frame" x="16" y="139" width="94" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Successes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ukv-mO-LRP">
-                                <rect key="frame" x="31" y="254" width="82" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Dice: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqa-tM-uzh">
+                                <rect key="frame" x="16" y="214" width="146" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Successes: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0AR-w9-dC1">
+                                <rect key="frame" x="16" y="271" width="146" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total dice: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0h-5E-ocY">
+                                <rect key="frame" x="16" y="242" width="146" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="146" id="4jB-Qt-Mbe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Average value: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKs-Tl-XOm">
+                                <rect key="frame" x="16" y="300" width="146" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="146" id="6PB-zC-CWg"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="xkO-4w-Yvu"/>
-                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <viewLayoutGuide key="safeArea" id="59y-XR-dOC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="zIc-sE-LUe" firstAttribute="leading" secondItem="xkO-4w-Yvu" secondAttribute="leading" constant="289" id="0OM-LM-eDB"/>
-                            <constraint firstItem="xkO-4w-Yvu" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="EoZ-AB-9c5" secondAttribute="trailing" symbolic="YES" id="6ZV-sc-bOU"/>
-                            <constraint firstItem="xkO-4w-Yvu" firstAttribute="trailing" secondItem="P89-fi-dgn" secondAttribute="trailing" constant="170" id="Krc-u1-RM0"/>
-                            <constraint firstItem="DoN-dm-HyT" firstAttribute="leading" secondItem="xkO-4w-Yvu" secondAttribute="leading" constant="31" id="MZp-eP-WUc"/>
-                            <constraint firstItem="zIc-sE-LUe" firstAttribute="top" secondItem="xkO-4w-Yvu" secondAttribute="top" constant="2" id="Mkt-Ku-iYA"/>
-                            <constraint firstItem="DoN-dm-HyT" firstAttribute="top" secondItem="EoZ-AB-9c5" secondAttribute="bottom" constant="70" id="Zl1-mZ-gud"/>
-                            <constraint firstItem="zIc-sE-LUe" firstAttribute="trailing" secondItem="zEV-15-0gH" secondAttribute="trailingMargin" id="ecV-gl-bBn"/>
-                            <constraint firstItem="DoN-dm-HyT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xkO-4w-Yvu" secondAttribute="leading" id="kaN-Po-de1"/>
-                            <constraint firstItem="P89-fi-dgn" firstAttribute="bottom" secondItem="EoZ-AB-9c5" secondAttribute="bottom" id="lcX-rT-Nmq"/>
-                            <constraint firstItem="EoZ-AB-9c5" firstAttribute="top" secondItem="xkO-4w-Yvu" secondAttribute="top" constant="47" id="nAX-ol-TQX"/>
-                            <constraint firstItem="xkO-4w-Yvu" firstAttribute="trailing" secondItem="DoN-dm-HyT" secondAttribute="trailing" constant="195" id="o2j-bo-vwv"/>
-                            <constraint firstItem="Ukv-mO-LRP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DoN-dm-HyT" secondAttribute="leading" id="ucA-CR-822"/>
-                            <constraint firstItem="P89-fi-dgn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="EoZ-AB-9c5" secondAttribute="trailing" constant="8" symbolic="YES" id="wKH-fz-gtz"/>
-                            <constraint firstItem="EoZ-AB-9c5" firstAttribute="leading" secondItem="xkO-4w-Yvu" secondAttribute="leading" constant="31" id="wv0-uU-Kmb"/>
-                            <constraint firstItem="Ukv-mO-LRP" firstAttribute="top" secondItem="DoN-dm-HyT" secondAttribute="bottom" constant="8" symbolic="YES" id="xkp-57-bmX"/>
-                            <constraint firstItem="xkO-4w-Yvu" firstAttribute="trailing" secondItem="Ukv-mO-LRP" secondAttribute="trailing" constant="277" id="zLx-Du-HdO"/>
+                            <constraint firstItem="aju-GV-gmO" firstAttribute="leading" secondItem="hsh-oB-2L8" secondAttribute="trailing" constant="61" id="0gL-ih-B8H"/>
+                            <constraint firstItem="hsh-oB-2L8" firstAttribute="top" secondItem="59y-XR-dOC" secondAttribute="top" constant="51" id="49e-yg-M1e"/>
+                            <constraint firstItem="S0h-5E-ocY" firstAttribute="top" secondItem="bhB-Xd-DeE" secondAttribute="top" constant="242" id="4ql-tW-hwm"/>
+                            <constraint firstItem="hsh-oB-2L8" firstAttribute="bottom" secondItem="aju-GV-gmO" secondAttribute="bottom" id="71L-rc-YhV"/>
+                            <constraint firstItem="S0h-5E-ocY" firstAttribute="leading" secondItem="uqa-tM-uzh" secondAttribute="leading" id="MTI-45-fh8"/>
+                            <constraint firstItem="S0h-5E-ocY" firstAttribute="trailing" secondItem="0AR-w9-dC1" secondAttribute="trailing" id="PMY-h1-5Fe"/>
+                            <constraint firstItem="S0h-5E-ocY" firstAttribute="top" secondItem="uqa-tM-uzh" secondAttribute="bottom" constant="8" symbolic="YES" id="T76-2Q-6LZ"/>
+                            <constraint firstItem="S0h-5E-ocY" firstAttribute="leading" secondItem="PKs-Tl-XOm" secondAttribute="leading" id="UI3-h7-TYr"/>
+                            <constraint firstItem="IUr-6O-d9z" firstAttribute="trailing" secondItem="bhB-Xd-DeE" secondAttribute="trailingMargin" id="Uy4-S4-J6N"/>
+                            <constraint firstItem="IUr-6O-d9z" firstAttribute="leading" secondItem="59y-XR-dOC" secondAttribute="leading" constant="289" id="XAu-Sg-MZe"/>
+                            <constraint firstItem="IUr-6O-d9z" firstAttribute="top" secondItem="59y-XR-dOC" secondAttribute="top" id="bzD-ru-Nhr"/>
+                            <constraint firstItem="0AR-w9-dC1" firstAttribute="top" secondItem="S0h-5E-ocY" secondAttribute="bottom" constant="8" symbolic="YES" id="ewj-Kl-wS3"/>
+                            <constraint firstItem="S0h-5E-ocY" firstAttribute="leading" secondItem="0AR-w9-dC1" secondAttribute="leading" id="fAx-e7-O59"/>
+                            <constraint firstItem="S0h-5E-ocY" firstAttribute="leading" secondItem="bhB-Xd-DeE" secondAttribute="leadingMargin" id="hCC-v0-rzW"/>
+                            <constraint firstItem="59y-XR-dOC" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="PKs-Tl-XOm" secondAttribute="trailing" symbolic="YES" id="l5c-7i-fsb"/>
+                            <constraint firstItem="S0h-5E-ocY" firstAttribute="trailing" secondItem="uqa-tM-uzh" secondAttribute="trailing" id="lDV-Ww-mS3"/>
+                            <constraint firstItem="59y-XR-dOC" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aju-GV-gmO" secondAttribute="trailing" symbolic="YES" id="oLE-z0-H3v"/>
+                            <constraint firstItem="PKs-Tl-XOm" firstAttribute="top" secondItem="0AR-w9-dC1" secondAttribute="bottom" constant="8" symbolic="YES" id="qMW-hh-OzI"/>
+                            <constraint firstItem="S0h-5E-ocY" firstAttribute="leading" secondItem="hsh-oB-2L8" secondAttribute="leading" id="uW2-n1-mzT"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Lnc-i5-qWN"/>
+                    <navigationItem key="navigationItem" id="EC0-Y5-Hb1"/>
                     <connections>
-                        <outlet property="Output" destination="EoZ-AB-9c5" id="FMa-pw-Qo9"/>
+                        <outlet property="AverageDisplay" destination="PKs-Tl-XOm" id="SaZ-NG-Yih"/>
+                        <outlet property="NumDiceDisplay" destination="uqa-tM-uzh" id="S89-zM-4Wz"/>
+                        <outlet property="SuccessDisplay" destination="0AR-w9-dC1" id="rDL-xy-cuT"/>
+                        <outlet property="TotalDisplay" destination="S0h-5E-ocY" id="fHm-U8-Xxo"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KDh-Zl-ebM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DeO-or-xJQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1858.4615384615383" y="68.957345971563981"/>
+            <point key="canvasLocation" x="1856.9230769230769" y="68.957345971563981"/>
         </scene>
         <!--Dice Set View Controller-->
         <scene sceneID="4ow-mE-iO6">
@@ -173,6 +197,7 @@
                             <constraint firstItem="9Ug-lB-8ST" firstAttribute="top" secondItem="W4d-ei-B2G" secondAttribute="top" constant="83" id="nws-hn-COj"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="shb-3O-XZK"/>
                     <connections>
                         <outlet property="diceMax" destination="Snv-dU-V1j" id="XVC-cq-N4n"/>
                         <outlet property="filterVal" destination="CwR-F0-ChF" id="hwx-kD-KrW"/>
@@ -181,7 +206,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3kA-9q-Iws" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2685" y="53"/>
+            <point key="canvasLocation" x="2738" y="69"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9W1-hn-Ma2">
@@ -205,9 +230,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
