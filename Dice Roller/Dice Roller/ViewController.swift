@@ -46,6 +46,11 @@ class StartViewController: UIViewController {
     @IBOutlet weak var d10value: UILabel!
     
     
+    @IBAction func d12(_ sender: Any) {
+        d12value.isHidden = false
+        d12value.text = "\(rand(max:12))"
+    }
+    @IBOutlet weak var d12value: UILabel!
     
 }
 

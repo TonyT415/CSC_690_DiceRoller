@@ -92,6 +92,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3R-qC-WCu">
+                                <rect key="frame" x="25" y="520" width="49" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="D12"/>
+                                <connections>
+                                    <action selector="d12:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ye5-KS-CCZ"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fh6-Wy-IAL">
+                                <rect key="frame" x="95" y="525" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -100,6 +114,7 @@
                             <constraint firstItem="9Zk-Sm-u9Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="4ML-ZS-e2z"/>
                             <constraint firstItem="wsE-al-Z3t" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5LH-cA-5kU"/>
                             <constraint firstItem="9Zk-Sm-u9Y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="F8d-vq-AKf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Fh6-Wy-IAL" secondAttribute="trailing" symbolic="YES" id="FoI-fq-2sg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ica-vB-KFZ" secondAttribute="bottom" constant="415" id="H1Z-kj-sf2"/>
                             <constraint firstItem="wnL-M6-Fh8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IAu-Fb-K2F"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7w8-LR-PMS" secondAttribute="trailing" symbolic="YES" id="IC3-53-vik"/>
@@ -110,6 +125,7 @@
                             <constraint firstItem="wnL-M6-Fh8" firstAttribute="centerX" secondItem="t3Z-PU-4K1" secondAttribute="centerX" id="S88-hV-IDI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vcq-SA-3d2" secondAttribute="trailing" symbolic="YES" id="U3v-mz-x5T"/>
                             <constraint firstItem="aun-KC-EP3" firstAttribute="leading" secondItem="wnL-M6-Fh8" secondAttribute="trailing" constant="21" id="Xru-2I-OJG"/>
+                            <constraint firstItem="x3R-qC-WCu" firstAttribute="top" secondItem="wnL-M6-Fh8" secondAttribute="bottom" constant="8" id="Yrz-qE-M1S"/>
                             <constraint firstItem="t3Z-PU-4K1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="bcm-Be-ZoE"/>
                             <constraint firstItem="Z29-TD-ovu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Yn1-Wh-q6y" secondAttribute="trailing" constant="8" symbolic="YES" id="bor-Cx-sqX"/>
                             <constraint firstItem="wnL-M6-Fh8" firstAttribute="top" secondItem="Yn1-Wh-q6y" secondAttribute="bottom" constant="8" symbolic="YES" id="cUm-tx-qKf"/>
@@ -128,12 +144,16 @@
                             <constraint firstItem="7w8-LR-PMS" firstAttribute="leading" secondItem="vcq-SA-3d2" secondAttribute="leading" id="oWi-w9-3rZ"/>
                             <constraint firstItem="7Yu-8d-0lS" firstAttribute="top" secondItem="9Zk-Sm-u9Y" secondAttribute="bottom" priority="10" constant="100" id="ouq-eD-Kje"/>
                             <constraint firstItem="7w8-LR-PMS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="t3Z-PU-4K1" secondAttribute="trailing" constant="8" symbolic="YES" id="pEJ-EQ-12I"/>
+                            <constraint firstItem="Fh6-Wy-IAL" firstAttribute="leading" secondItem="x3R-qC-WCu" secondAttribute="trailing" constant="21" id="wyI-T5-xMG"/>
+                            <constraint firstItem="x3R-qC-WCu" firstAttribute="centerY" secondItem="Fh6-Wy-IAL" secondAttribute="centerY" id="xhK-2A-Ao4"/>
                             <constraint firstItem="wsE-al-Z3t" firstAttribute="centerX" secondItem="7Yu-8d-0lS" secondAttribute="centerX" constant="6.5" id="ylg-Am-2Rl"/>
+                            <constraint firstItem="x3R-qC-WCu" firstAttribute="centerX" secondItem="wnL-M6-Fh8" secondAttribute="centerX" id="yxu-a4-Bhk"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="c3y-29-geT"/>
                     <connections>
                         <outlet property="d10value" destination="aun-KC-EP3" id="p7C-0m-Yt9"/>
+                        <outlet property="d12value" destination="Fh6-Wy-IAL" id="J9v-Hg-Yfs"/>
                         <outlet property="d4value" destination="vcq-SA-3d2" id="LPK-8c-zzu"/>
                         <outlet property="d6value" destination="7w8-LR-PMS" id="4x6-XR-aQe"/>
                         <outlet property="d8value" destination="Z29-TD-ovu" id="9PO-Nb-hsm"/>
