@@ -235,6 +235,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Average value: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKs-Tl-XOm">
+                                <rect key="frame" x="16" y="329" width="146" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="146" id="6PB-zC-CWg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Success percent:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cv-oS-v0z">
                                 <rect key="frame" x="16" y="300" width="146" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -247,11 +256,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Average value: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKs-Tl-XOm">
-                                <rect key="frame" x="16" y="329" width="146" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="146" id="6PB-zC-CWg"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x counts of Dy filtering for z" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Sq-dz-lLd">
+                                <rect key="frame" x="18.666666666666671" y="98" width="209.66666666666663" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -264,9 +270,11 @@
                             <constraint firstItem="hsh-oB-2L8" firstAttribute="top" secondItem="59y-XR-dOC" secondAttribute="top" constant="51" id="49e-yg-M1e"/>
                             <constraint firstItem="S0h-5E-ocY" firstAttribute="top" secondItem="bhB-Xd-DeE" secondAttribute="top" constant="242" id="4ql-tW-hwm"/>
                             <constraint firstItem="hsh-oB-2L8" firstAttribute="bottom" secondItem="aju-GV-gmO" secondAttribute="bottom" id="71L-rc-YhV"/>
+                            <constraint firstItem="aju-GV-gmO" firstAttribute="top" secondItem="1Sq-dz-lLd" secondAttribute="bottom" constant="10" id="AD4-ru-Hhu"/>
                             <constraint firstItem="59y-XR-dOC" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="R8e-4J-TGz" secondAttribute="trailing" symbolic="YES" id="ILv-DI-uxa"/>
                             <constraint firstItem="S0h-5E-ocY" firstAttribute="leading" secondItem="uqa-tM-uzh" secondAttribute="leading" id="MTI-45-fh8"/>
                             <constraint firstItem="S0h-5E-ocY" firstAttribute="trailing" secondItem="0AR-w9-dC1" secondAttribute="trailing" id="PMY-h1-5Fe"/>
+                            <constraint firstItem="1Sq-dz-lLd" firstAttribute="centerX" secondItem="aju-GV-gmO" secondAttribute="centerX" constant="-71.666666666666686" id="RHg-B1-rfv"/>
                             <constraint firstItem="6cv-oS-v0z" firstAttribute="leading" secondItem="0AR-w9-dC1" secondAttribute="leading" id="SXu-ke-PgZ"/>
                             <constraint firstItem="S0h-5E-ocY" firstAttribute="top" secondItem="uqa-tM-uzh" secondAttribute="bottom" constant="8" symbolic="YES" id="T76-2Q-6LZ"/>
                             <constraint firstItem="S0h-5E-ocY" firstAttribute="leading" secondItem="PKs-Tl-XOm" secondAttribute="leading" id="UI3-h7-TYr"/>
@@ -292,6 +300,7 @@
                         <outlet property="AverageDisplay" destination="PKs-Tl-XOm" id="SaZ-NG-Yih"/>
                         <outlet property="NumDiceDisplay" destination="uqa-tM-uzh" id="S89-zM-4Wz"/>
                         <outlet property="PercentDisplay" destination="6cv-oS-v0z" id="GR4-zL-h9N"/>
+                        <outlet property="Rollstats" destination="1Sq-dz-lLd" id="Ws2-Et-jM4"/>
                         <outlet property="SuccessDisplay" destination="0AR-w9-dC1" id="rDL-xy-cuT"/>
                         <outlet property="TotalDisplay" destination="S0h-5E-ocY" id="fHm-U8-Xxo"/>
                         <outlet property="maxDisplay" destination="R8e-4J-TGz" id="Ohs-Oz-PCE"/>
