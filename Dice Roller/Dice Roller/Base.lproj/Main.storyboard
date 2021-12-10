@@ -256,8 +256,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x counts of Dy filtering for  values abovez" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Sq-dz-lLd">
-                                <rect key="frame" x="-33.333333333333343" y="98" width="313.33333333333337" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x counts of Dy filtering values abovez" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Sq-dz-lLd">
+                                <rect key="frame" x="16" y="98" width="283.33333333333331" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -274,7 +274,7 @@
                             <constraint firstItem="59y-XR-dOC" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="R8e-4J-TGz" secondAttribute="trailing" symbolic="YES" id="ILv-DI-uxa"/>
                             <constraint firstItem="S0h-5E-ocY" firstAttribute="leading" secondItem="uqa-tM-uzh" secondAttribute="leading" id="MTI-45-fh8"/>
                             <constraint firstItem="S0h-5E-ocY" firstAttribute="trailing" secondItem="0AR-w9-dC1" secondAttribute="trailing" id="PMY-h1-5Fe"/>
-                            <constraint firstItem="1Sq-dz-lLd" firstAttribute="centerX" secondItem="aju-GV-gmO" secondAttribute="centerX" constant="-71.666666666666686" id="RHg-B1-rfv"/>
+                            <constraint firstItem="1Sq-dz-lLd" firstAttribute="centerX" secondItem="aju-GV-gmO" secondAttribute="centerX" constant="-37.333333333333343" id="RHg-B1-rfv"/>
                             <constraint firstItem="6cv-oS-v0z" firstAttribute="leading" secondItem="0AR-w9-dC1" secondAttribute="leading" id="SXu-ke-PgZ"/>
                             <constraint firstItem="S0h-5E-ocY" firstAttribute="top" secondItem="uqa-tM-uzh" secondAttribute="bottom" constant="8" symbolic="YES" id="T76-2Q-6LZ"/>
                             <constraint firstItem="S0h-5E-ocY" firstAttribute="leading" secondItem="PKs-Tl-XOm" secondAttribute="leading" id="UI3-h7-TYr"/>

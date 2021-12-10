@@ -13,7 +13,7 @@ class DiceViewController: UIViewController, DiceProtocol{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        Rollstats.text = "\(diceNum) counts of D\(diceMax) filtering for values above \(filter)"
+        Rollstats.text = "\(diceNum) counts of D\(diceMax) filtering values above \(filter)"
     }
     
     func diceNum(_ numDice: Int) {
@@ -27,7 +27,7 @@ class DiceViewController: UIViewController, DiceProtocol{
     
     func filter(_ filterVal: Int) {
         self.filter = filterVal
-        Rollstats.text = "\(diceNum) counts of D\(diceMax) filtering for values above \(filter)"
+        Rollstats.text = "\(diceNum) counts of D\(diceMax) filtering values above \(filter)"
     }
     
     var diceNum: Int = 3
